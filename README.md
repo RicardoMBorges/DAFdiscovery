@@ -3,6 +3,9 @@ DAFdiscovery is meant to disseminate STOCSY calculation for NP scientists to ena
 The use of .csv files is meant to enable users to use their methods of choice for (MS and/or NMR) data processing. This method was developed from .csv derived from MNova and MZMine files.
 
 Input:
+
+Get Organized: Each project can be represented as its own directory.
+
 Metadata (.csv) must include the following column headers
 
 Samples - sample codes
