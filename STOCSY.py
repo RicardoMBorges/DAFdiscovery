@@ -1,3 +1,25 @@
+def hover(event):
+    if event.inaxes == axs:
+        inv = axs.transData.inverted()
+        maxcoord=axs.transData.transform((x[0], 0))[0]
+        mincoord=axs.transData.transform((x[len(x)-1], 0))[0]
+        ppm=((maxcoord-mincoord)-(event.x-mincoord))/(maxcoord-mincoord)*(maxppm-minppm)+minppm
+        cov=covar[int(((maxcoord-mincoord)-(event.x-mincoord))/(maxcoord-mincoord)*len(covar))]
+        cor=corr[int(((maxcoord-mincoord)-(event.x-mincoord))/(maxcoord-mincoord)*len(corr))]
+        text.set_visible(True)
+        text.set_position((event.xdata, event.ydata))
+        text.set_text('{:.2f}'.format(ppm)+" ppm, covariance: "+'{:.6f}'.format(cov)+", correlation: "+'{:.2f}'.format(cor))
+        lnx[0].set_data([event.xdata, event.xdata], [-1, 1])
+        lnx[0].set_linestyle('--')
+        lny[0].set_data([x[0],x[len(x)-1]], [cov,cov])
+        lny[0].set_linestyle('--')
+    else:
+        text.set_visible(False)
+        lnx[0].set_linestyle('None')
+        lny[0].set_linestyle('None')
+    fig.canvas.draw()
+    fig.canvas.flush_events()
+
 def STOCSY(target,X,ppm):
     
     """
@@ -71,7 +93,13 @@ def STOCSY(target,X,ppm):
     axs.set_xlabel('ppm', fontsize=14)
     axs.set_ylabel(f"Covariance with \n signal at {target:.2f} ppm", fontsize=14)
     axs.set_title(f'STOCSY from signal at {target:.2f} ppm', fontsize=16)
-    
+
+    text = axs.text(1, 1, '')
+    lnx = plt.plot([60,60], [0,1.5], color='black', linewidth=0.3)
+    lny = plt.plot([0,100], [1.5,1.5], color='black', linewidth=0.3)
+    lnx[0].set_linestyle('None')
+    lny[0].set_linestyle('None')
+    fig.canvas.mpl_connect("motion_notify_event", hover)    
     pl.show()
     if not os.path.exists('images'):
         os.mkdir('images')
