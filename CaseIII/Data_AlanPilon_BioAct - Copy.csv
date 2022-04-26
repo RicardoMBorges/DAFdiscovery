@@ -1,0 +1,4 @@
+,Juniperus Communis,Origanum majorana,Cymbopogon martini,Boswellia carteri,Mentha piperita,Citrus aurantium amara,Eucalyptus citriodora,Eucalyptus globulus,Lavandula angustifolia,Lavandula hybrida,Cymbopogon flexuosus,Cymbopogon nardus,Cedrus atlantica,Rosmarinus officinalis,Citrus aurantium bergamia,Perlagonium graveolens,Litsea cubeba,Salvia sclareia,Amyris balsamifera,eucalipto_staigeriana
+Mortality_24h,75,82.5,87.5,42.5,100,42.5,100,87.5,100,70,100,100,60,90,100,100,100,60,100,100
+Mortality_48h,82.5,80,92.5,75,100,60,100,97.5,100,70,100,100,65,90,100,100,100,75,100,100
+LC50,135.2,121.3,73.88,129.8,95.29,177.1,23.26,276.6,85.88,109,41.66,31.25,269.1,80.33,99.57,78.32,32.74,120,99.51,43.13
