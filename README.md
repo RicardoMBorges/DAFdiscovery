@@ -32,19 +32,26 @@ columns as the samples
 	
 * BioAct_filename - as reported for the BioActivity readout if available 
 
+
+
+
 #### Important: Users are directed to different options according to the dataset available and made explicit in the Metadata. For instance, if the user has in the Metadata the columns Samples, MS_filename, and BioAct_filename, they will be pointed to option 4 (combining data from MS and Bioactivity).
 
 ### Input files: .csv files were chosen as input because those are vendor-agnostic, easily handled by text editors, and we don't intent to re-create methods for peak processing for MS or NMR. Thus, users can process their data using their platform of choice (e.g.: MZmine for MS or MNova for NMR).
 
 * Metadata.csv - presents a list of the filenames used for each dataset (MS, NMR, or BioActivity). Those filenames should be the same as exported from each specific processing platform (e.g.: MZmine for MS or MNova for NMR); they should list in ordem (according to the Samples column) all the headers from the other input .csv files
+![image](https://user-images.githubusercontent.com/15653685/175099437-b4a5a239-d044-4436-b3f7-92509ddd1354.png)
 
 * MS.csv - the .csv file exported from the MS processing platform (e.g.: MZMine) where MS-features are listed as rows and samples as columns with filenames as headers for each column [tip: this can/should be the same \*quant.csv file used in FBMN from GNPS]
+![image](https://user-images.githubusercontent.com/15653685/175099274-a4acdb5d-5dc2-4641-a975-12c35e4f76ed.png)
 
 * NMR.csv - the .csv file exported from the NMR processing platform (e.g.: MNova) where chemical shifts are listed as rows and samples as columns with filenames as headers for each column
+![image](https://user-images.githubusercontent.com/15653685/175099377-79b9e593-0342-4521-9f68-375aab28ac72.png)
 
 * BioActivity.csv - the .csv file produced from the Bioactivity readout where samples are listed headers for each column
 	* a gradient of values (avoid binaries such as 'ative vs inactive' or '1 vs 0') for the Bioactivity data must be used since the potency of the activity will be a consequence of certain coumpound concentrations across samples
 
+![image](https://user-images.githubusercontent.com/15653685/175099408-83a8b015-7418-4940-91f0-408dfb766321.png)
 
 ### References:
 
