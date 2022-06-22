@@ -24,7 +24,7 @@ columns as the samples
 	
 * BioAct_filename - as reported for the BioActivity readout if available 
 
-### Important: The user is directed to different options according to the dataset available and made explicit in the Metadata. For instance, if the user has in the Metadata the columns Samples, MS_filename, and BioAct_filename, they will be pointed to option 4 (combining data from MS and Bioactivity).
+## Important: Users are directed to different options according to the dataset available and made explicit in the Metadata. For instance, if the user has in the Metadata the columns Samples, MS_filename, and BioAct_filename, they will be pointed to option 4 (combining data from MS and Bioactivity).
 
 ### Input files: .csv files were chosen as input because those are vendor-agnostic, easily handled by text editors, and we don't intent to re-create methods for peak processing for MS or NMR. Thus, users can process their data using their platform of choice (e.g.: MZmine for MS or MNova for NMR).
 
