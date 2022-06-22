@@ -3,6 +3,12 @@ DAFdiscovery is meant to disseminate STOCSY calculation for NP scientists to ena
 The use of .csv files is meant to enable users to use their methods of choice for (MS and/or NMR) data processing. This method was developed from .csv derived from MNova and MZMine files.
 
 Get Organized: Each project can be represented as its own directory inside the main directory of DAFdiscovery
+* Download the main DAFdiscovery directory to a local of choice in your computer
+* Each project should be organized as a new directory inside the main DAFdiscovery directory with all necessary inputs
+* The STOCSY function is present at this main directory
+* The .ipynb files (notebooks) are present in this main directory
+	* users should copy and rename these .ipynb file (notebook) according to their projects 
+	* users should delete unused options from each .ipynb file (notebook) according to their projects
 
 Metadata (.csv) must include the following column headers
 
