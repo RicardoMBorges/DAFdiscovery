@@ -7,7 +7,20 @@ The use of .csv files is meant to enable users to use their methods of choice fo
 * Install Jupyter Notebooks through Anaconda at https://anaconda.org/
 * Start Jupyter Notebooks from the Anaconda suite or using the Anaconda Prompt (installed together with Anaconda)
 	* we recoment adding the Anaconda prompt to *favorites* (or Start in Windows) for easy access
-* Once Jyputer Notebook is opened, navegate to the directory where DAFdiscovery was saved
+	* from the Anaconda prompt, use jupyter notebook to start Jupyter Notebook
+		* use jupyter notebook D: to start Jupyter Notebook at the driver D: (e.g. if Jupyter Notebook is in C: and data is in D:)
+* Once Jyputer Notebook is opened, navegate to the directory where DAFdiscovery was saved to open the notebooks (.ipynb files)
+* TIPS to know:
+	* Jupyter is a web application used to create documents that integrates codes, information text, and results
+		* each notebook document (.ipynb) is separated into cells that can be used for codes, texts, and others
+		* Markdown: when a cell is setted as Markdown, users can add text as markup language to provide information for other users
+		* Code: when a cell is setted as Code, users can add code lines for programming
+	* use %pwd to print the current directory
+	* use %ls to show all files in the current directory
+	* use %Who to list all variables
+	* to run a cell with code lines, use "Ctrl + Enter" (or the button "Run")
+	* Remember to always shutdown the kernel after using each notebook
+		* Kernel --> Shutdown
 * Have fun!
 
 ### Get Organized: Each project can be represented as its own directory inside the main directory of DAFdiscovery
@@ -32,9 +45,6 @@ rows as the chemical shift (ppm) values
 columns as the samples
 	
 * BioAct_filename - as reported for the BioActivity readout if available 
-
-
-
 
 #### Important: Users are directed to different options according to the dataset available and made explicit in the Metadata. For instance, if the user has in the Metadata the columns Samples, MS_filename, and BioAct_filename, they will be pointed to option 4 (combining data from MS and Bioactivity).
 
