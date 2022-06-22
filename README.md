@@ -2,6 +2,14 @@
 DAFdiscovery is meant to disseminate STOCSY calculation for NP scientists to enable data fusion and discovery of compounds of interest from correlation calculations.
 The use of .csv files is meant to enable users to use their methods of choice for (MS and/or NMR) data processing. This method was developed from .csv derived from MNova and MZMine files.
 
+### Basics on Jupyter Notebook
+* Jupyter Notebooks are completely free and users can download it by its own or as part of Anaconda (recommended) 
+* Install Jupyter Notebooks through Anaconda at https://anaconda.org/
+* Start Jupyter Notebooks from the Anaconda suite or using the Anaconda Prompt (installed together with Anaconda)
+	* we recoment adding the Anaconda prompt to *favorites* for easy access
+* Once Jyputer Notebook is opened, navegate to the directory where DAFdiscovery was saved
+* Have fun!
+
 ### Get Organized: Each project can be represented as its own directory inside the main directory of DAFdiscovery
 * Download the main DAFdiscovery directory to a local of choice in your computer
 * Each project should be organized as a new directory inside the main DAFdiscovery directory with all necessary inputs
