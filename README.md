@@ -5,11 +5,22 @@ The use of .csv files is meant to enable users to use their methods of choice fo
 ### Basics on Jupyter Notebook
 * Jupyter Notebooks are completely free and users can download it on its own or as part of Anaconda (recommended) 
 * Install Jupyter Notebooks through Anaconda at https://anaconda.org/
-* Start Jupyter Notebooks from the Anaconda suite or using the Anaconda Prompt (installed together with Anaconda)
-	* we recoment adding the Anaconda prompt to *favorites* (or Start in Windows) for easy access
-	* from the Anaconda prompt, use jupyter notebook to start Jupyter Notebook
+* Start Jupyter Notebooks from the Anaconda suite or using the 'Anaconda Prompt' (installed together with Anaconda)
+	* we recoment adding the 'Anaconda prompt' to *favorites* (or Start in Windows) for easy access
+	* from the 'Anaconda prompt', use jupyter notebook to start Jupyter Notebook
 		* use jupyter notebook D: to start Jupyter Notebook at the driver D: (e.g. if Jupyter Notebook is in C: and data is in D:)
 * Once Jyputer Notebook is opened, navegate to the directory where DAFdiscovery was saved to open the notebooks (.ipynb files)
+* Dependencies required 
+	* Open 'Anaconda Prompt' command line and install the packages:
+		* NUMPY: type “pip install -U  numpy”
+		* PANDAS: type “pip install -U  pandas”
+		* IPYMPL: type “pip install -U  ipympl”
+		* PLOTLY: type “pip install -U  plotly”
+		* KALEIDO: type “pip install -U  kaleido”
+		* MATPLOTLIC: type “pip install -U  matplotlib”
+		* SKLEARN: type “pip install -U  scikit-learn”
+		* SEABORN: type “pip install -U  seaborn”
+
 * TIPS to know:
 	* Jupyter is a web application used to create documents that integrates codes, information text, and results
 		* each notebook document (.ipynb) is separated into cells that can be used for codes, texts, and others
