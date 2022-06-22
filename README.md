@@ -6,7 +6,7 @@ The use of .csv files is meant to enable users to use their methods of choice fo
 * Jupyter Notebooks are completely free and users can download it on its own or as part of Anaconda (recommended) 
 * Install Jupyter Notebooks through Anaconda at https://anaconda.org/
 * Start Jupyter Notebooks from the Anaconda suite or using the Anaconda Prompt (installed together with Anaconda)
-	* we recoment adding the Anaconda prompt to *favorites* for easy access
+	* we recoment adding the Anaconda prompt to *favorites* (or Start in Windows) for easy access
 * Once Jyputer Notebook is opened, navegate to the directory where DAFdiscovery was saved
 * Have fun!
 
