@@ -3,7 +3,7 @@ DAFdiscovery is meant to disseminate STOCSY calculation for NP scientists to ena
 The use of .csv files is meant to enable users to use their methods of choice for (MS and/or NMR) data processing. This method was developed from .csv derived from MNova and MZMine files.
 
 ### Basics on Jupyter Notebook
-* Jupyter Notebooks are completely free and users can download it by its own or as part of Anaconda (recommended) 
+* Jupyter Notebooks are completely free and users can download it on its own or as part of Anaconda (recommended) 
 * Install Jupyter Notebooks through Anaconda at https://anaconda.org/
 * Start Jupyter Notebooks from the Anaconda suite or using the Anaconda Prompt (installed together with Anaconda)
 	* we recoment adding the Anaconda prompt to *favorites* for easy access
