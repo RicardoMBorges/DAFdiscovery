@@ -17,6 +17,7 @@ The use of .csv files is meant to enable users to use their methods of choice fo
 * The .ipynb files (notebooks) should also be located in this main directory
 	* users should copy and rename each .ipynb file (notebook) according to their projects 
 	* users should delete unused options from each .ipynb file (notebook) according to their projects
+![image](https://user-images.githubusercontent.com/15653685/175099663-78c0193d-9b96-4078-bffb-5138e5fc3cb7.png)
 
 ### Metadata (.csv) must include the following column headers
 
