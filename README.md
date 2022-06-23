@@ -75,6 +75,88 @@ columns as the samples
 
 ![image](https://user-images.githubusercontent.com/15653685/175099408-83a8b015-7418-4940-91f0-408dfb766321.png)
 
+
+
+### Running DAFdiscovery
+
+* We recommend users to first open the notebook file "dafDiscovery_General.ipynb"
+
+	* This notebook will open as a new tab
+
+* All notebooks are divided into cells and Code cells are the ones that should be used to run the codes
+
+	* Markdown cells are used for information only and not to run codes
+
+* To run a Code cell, users can use 'Ctrl + Enter' or the button "Run"
+
+1. Dependencies to install
+
+2. Import section
+
+	2.a. Set the project to use
+
+	2.b. Import the Metadata.csv file to establish filename order according to Sample IDs
+
+		* this will define the option to be used regarding the available data. 
+
+		* for e.g. if the user has 'MS_filename' and 'NMR_filename' only, this will direct the user to go for option 2 (work with MS and NMR data)
+
+#### We recommend users delete other options and keep only the one that fits that project in use
+
+##### Save the notebook file with another name (related to the project in use)
+
+3. Data fusion
+
+	3.a. in this cell, we will 
+
+		* reorganize the filename order in each dataset according to the Sample IDs in the Metadata, 
+
+		* merge the datasets accordingly
+
+		* save the new merged dataset into a .csv file for the user to have it if necessary
+
+4. STOCSY calculations
+
+	4.a. in this cell, we will finally apply the STOCSY function to calculate the covariance and the correlation data from the selected driver peak
+
+		* a driver peak must be selected/chosen by the user and it will reflect the user's interest in certain peak
+
+		* a NMR peak can be used as driver if NMR data is available
+
+		* a MS-feature can be used as driver if MS data is available
+
+		* the bioactivity derived peak will be chosen when bioactivity data is available
+			* this is because when we have bioactivity data, we want to look for (MS or NMR or both) peaks that are correlated to it
+ 
+		* the resulted correlation values for each MS-feature (according to the selected driver) are saved as a .csv file names MSinfo_corr_*driver*.csv in the data directory created inside the Project directory in use
+
+	4.b. to run the STOCSY calculation more than once, users can duplicate (Insert -> Insert Cell Below; or 'Esc + B') by copy and pasting the code into a new cell
+
+		* the user will need to modify the driver again
+
+	4.c. Plots
+
+		* NMR STOCSY plots are so that the intensities correspond to the covariance values for each variable (according to the driver peak) and the colors correspond to the correlation values for each variable (according to the driver peak); the x-axis is kept as chemical shifts (ppm)
+
+			* the color map refers to a variation between -1 to +1 where values close to 1 show strong correlations, but the signal shown negative or positive correlations
+
+		* MS STOCSY plots are scatter-plots of Retention Time vs M/Z (this can be easily modified e.g. to Retention Time vs Row ID or scan ID)
+
+		* MS-features are represented as circular marks with variable sizes and colors 
+
+			* the sizes of the circular marks are related to the correlation values for each variable according to the driver
+
+			* the color map refers to the same as mentioned before for the NMR STOCSY plot
+
+	4.d. From DAFdiscovery to Cytoscape for Molecular Networks (FBMN-GNPS) when it is available 
+
+		* the file MSinfo_corr_*driver*.csv produced after the application of the STOCSY function in a dataset that contains MS data can be imported as node attributes (in Cytoscape: File -> Import -> Table from File...)
+
+		* this is possible because every correlation value is indexed to the 'row ID' which characterizes each deconvoluted MS-feature
+
+		* this is why the user has an FBMN workflow and the required data available, for instance: the *_quant.csv file
+
+
 ### References:
 
 https://pubmed.ncbi.nlm.nih.gov/15732908/
