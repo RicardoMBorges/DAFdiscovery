@@ -77,6 +77,13 @@ columns as the samples
 
 
 
+
+#### General input organization
+![inputs-01-01](https://user-images.githubusercontent.com/15653685/175361394-2a0dc6c1-519d-40d9-a846-9688401fbac1.png)
+
+
+
+
 ### Running DAFdiscovery
 
 * We recommend users to first open the notebook file "dafDiscovery_General.ipynb"
