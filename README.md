@@ -108,9 +108,11 @@ columns as the samples
 
 		* for e.g. if the user has 'MS_filename' and 'NMR_filename' only, this will direct the user to go for option 2 (work with MS and NMR data)
 
+---
 #### We recommend users delete other options and keep only the one that fits that project in use
 
 ##### Save the notebook file with another name (related to the project in use)
+---
 
 3. Data fusion
 
