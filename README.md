@@ -32,7 +32,7 @@ The use of .csv files is meant to enable users to use their methods of choice fo
 	* to run a cell with code lines, use "Ctrl + Enter" (or the button "Run")
 	* Remember to always shutdown the kernel after using each notebook
 		* Kernel --> Shutdown
-* Have fun!
+	* Have fun!
 
 ### Get Organized: Each project can be represented as its own directory inside the main directory of DAFdiscovery
 * Download the main DAFdiscovery directory to a local of choice in your computer
