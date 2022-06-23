@@ -18,7 +18,7 @@ The use of .csv files is meant to enable users to use their methods of choice fo
 		* PLOTLY: type “pip install -U  plotly”
 		* KALEIDO: type “pip install -U  kaleido”
 		* MATPLOTLIC: type “pip install -U  matplotlib”
-		* SKLEARN: type “pip install -U  scikit-learn”
+		* SCIKIT-LEARN: type “pip install -U  scikit-learn”
 		* SEABORN: type “pip install -U  seaborn”
 
 * TIPS to know:
