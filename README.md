@@ -35,7 +35,10 @@ The use of .csv files is meant to enable users to use their methods of choice fo
 	* Have fun!
 
 ### Get Organized: Each project can be represented as its own directory inside the main directory of DAFdiscovery
-* Download the main DAFdiscovery directory to a local of choice in your computer
+* Download the main DAFdiscovery directory to a local of choice on your computer
+	* using the dropdown button "Code", click on Download ZIP to download the full contend
+![image](https://user-images.githubusercontent.com/15653685/176012512-9bba2edd-0965-445c-acbb-1e51def8a917.png)
+
 * Each project should be organized as a new directory inside the main DAFdiscovery directory with all necessary inputs
 * The STOCSY.py function is present at this main DAFdiscovery directory
 * The .ipynb files (notebooks) should also be located in this main directory
