@@ -91,7 +91,7 @@ columns as the samples
 
 * We recommend users to first open the notebook file "dafDiscovery_General.ipynb"
 
-	* This notebook will open as a new tab
+	* Notebooks will open as a new tab
 
 * All notebooks are divided into cells and Code cells are the ones that should be used to run the codes
 
