@@ -180,3 +180,5 @@ https://pubmed.ncbi.nlm.nih.gov/35098600/
 https://pubs.rsc.org/en/content/articlelanding/2019/fd/c8fd00227d
 
 Video walk-through: https://youtu.be/_lQGzfK5V-k
+
+Video em Portugues (Seminario IPPN 25-07-2022): https://youtu.be/Jy0jjX0bL40
