@@ -171,6 +171,8 @@ columns as the samples
 
 ### References:
 
+https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/epdf/10.1002/pca.3178
+
 https://pubmed.ncbi.nlm.nih.gov/15732908/
 
 https://pubs.acs.org/doi/10.1021/ac051444m
