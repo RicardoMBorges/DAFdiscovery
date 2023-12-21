@@ -1,0 +1,16 @@
+wheel
+numpy
+warnings
+pandas
+os
+scipy
+pylab
+math
+seaborn
+plotly
+kaleido
+Pillow
+matplotlib
+jupyter-server
+scikit-learn
+tensorly
